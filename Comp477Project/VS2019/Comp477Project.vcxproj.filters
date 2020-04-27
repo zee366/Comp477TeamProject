@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Assets\Models">
+      <UniqueIdentifier>{380cfbb6-f09e-4a7b-944b-abadcd84ccb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Shaders">
+      <UniqueIdentifier>{b227c84e-8316-46eb-a9ef-920297dc308e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Textures">
+      <UniqueIdentifier>{de49ae00-d403-4802-b376-3b3a6c27144c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Scenes">
+      <UniqueIdentifier>{8e1e5950-4392-420a-86cc-3f24256c8e65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\AsteroidModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Billboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\BSpline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\BSplineCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\CubeModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\EventManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\FirstPersonCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ObjLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ParticleDescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ParticleEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\RingModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SpaceshipModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\SphereModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\StaticCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\TextureLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ThirdPersonCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\UI_elements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\MainCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\PreyModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\AsteroidModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Billboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\BSpline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\BSplineCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\CubeModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\EventManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\FirstPersonCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ObjLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ParsingHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ParticleDescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ParticleEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\RingModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SpaceshipModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\SphereModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\StaticCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\TextureLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ThirdPersonCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\UI_elements.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\MainCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\PreyModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Assets\Models\cube.obj">
+      <Filter>Assets\Models</Filter>
+    </Object>
+    <Object Include="..\Assets\Models\f.obj">
+      <Filter>Assets\Models</Filter>
+    </Object>
+    <Object Include="..\Assets\Models\Ring.obj">
+      <Filter>Assets\Models</Filter>
+    </Object>
+    <Object Include="..\Assets\Models\spaceship.obj">
+      <Filter>Assets\Models</Filter>
+    </Object>
+    <Object Include="..\Assets\Models\spaceship1.obj">
+      <Filter>Assets\Models</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Assets\Shaders\BlueColor.fragmentshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\PathLines.fragmentshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\PathLines.vertexshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SkyBox.fragmentshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SkyBox.vertexshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SolidColor.fragmentshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\SolidColor.vertexshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Texture.fragmentshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Shaders\Texture.vertexshader">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\Assets\Scenes\AnimatedScene.scene">
+      <Filter>Assets\Scenes</Filter>
+    </None>
+    <None Include="..\Assets\Scenes\AnimatedSceneWithParticles.scene">
+      <Filter>Assets\Scenes</Filter>
+    </None>
+    <None Include="..\Assets\Scenes\CoordinateSystem.scene">
+      <Filter>Assets\Scenes</Filter>
+    </None>
+    <None Include="..\Assets\Scenes\StaticScene.scene">
+      <Filter>Assets\Scenes</Filter>
+    </None>
+    <None Include="..\Assets\Textures\.DS_Store">
+      <Filter>Assets\Textures</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Assets\Textures\1X.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\2k_mercury.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\2x.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\3.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\10x.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\BillboardTest.bmp">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\BirdView.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\earth.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\f.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\FirstPerson.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\jupiter.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\mars.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\mercury.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\moon.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\neptune.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\Particle.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\PauseButton.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\s7.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\saturn.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\SideView.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\sun.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\ThirdPerson.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\uranus.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\Assets\Textures\venus.jpg">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

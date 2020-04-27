@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{487519FC-BF16-4830-B237-BE4D667219BC}</ProjectGuid>
+    <RootNamespace>Comp477Project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)/../Bin/</OutDir>
+    <IntDir>$(SolutionDir)/../Build/$(Configuration)/</IntDir>
+    <IncludePath>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;$(IncludePath)</IncludePath>
+    <LibraryPath>../ThirdParty/glfw-3.3/lib/win32/lib-vc2019;../ThirdParty/FreeImage-3170/lib/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)/../Bin/</OutDir>
+    <IntDir>$(SolutionDir)/../Build/$(Configuration)/</IntDir>
+    <IncludePath>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;$(IncludePath)</IncludePath>
+    <LibraryPath>../ThirdParty/glfw-3.3/lib/win32/lib-vc2019;../ThirdParty/FreeImage-3170/lib/win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;$(IncludePath)</IncludePath>
+    <LibraryPath>../ThirdParty/glfw-3.3/lib/win32/lib-vc2019;../ThirdParty/FreeImage-3170/lib/win32;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$/../Bin/</OutDir>
+    <IntDir>$(Platform)/../Build/$(Configuration)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../ThirdParty;../ThirdParty/glm;../ThirdParty/glfw-3.3/include;../ThirdParty/FreeImage-3170/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;FreeImage.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Animation.cpp" />
+    <ClCompile Include="..\Source\AsteroidModel.cpp" />
+    <ClCompile Include="..\Source\Billboard.cpp" />
+    <ClCompile Include="..\Source\BSpline.cpp" />
+    <ClCompile Include="..\Source\BSplineCamera.cpp" />
+    <ClCompile Include="..\Source\Camera.cpp" />
+    <ClCompile Include="..\Source\CubeModel.cpp" />
+    <ClCompile Include="..\Source\EventManager.cpp" />
+    <ClCompile Include="..\Source\FirstPersonCamera.cpp" />
+    <ClCompile Include="..\Source\glad.c" />
+    <ClCompile Include="..\Source\main.cpp" />
+    <ClCompile Include="..\Source\MainCamera.cpp" />
+    <ClCompile Include="..\Source\Model.cpp" />
+    <ClCompile Include="..\Source\ObjLoader.cpp" />
+    <ClCompile Include="..\Source\ParticleDescriptor.cpp" />
+    <ClCompile Include="..\Source\ParticleEmitter.cpp" />
+    <ClCompile Include="..\Source\ParticleSystem.cpp" />
+    <ClCompile Include="..\Source\PreyModel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\Source\Renderer.cpp" />
+    <ClCompile Include="..\Source\RingModel.cpp" />
+    <ClCompile Include="..\Source\SpaceshipModel.cpp" />
+    <ClCompile Include="..\Source\SphereModel.cpp" />
+    <ClCompile Include="..\Source\StaticCamera.cpp" />
+    <ClCompile Include="..\Source\TextureLoader.cpp" />
+    <ClCompile Include="..\Source\ThirdPersonCamera.cpp" />
+    <ClCompile Include="..\Source\UI_elements.cpp" />
+    <ClCompile Include="..\Source\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Animation.h" />
+    <ClInclude Include="..\Source\AsteroidModel.h" />
+    <ClInclude Include="..\Source\Billboard.h" />
+    <ClInclude Include="..\Source\BSpline.h" />
+    <ClInclude Include="..\Source\BSplineCamera.h" />
+    <ClInclude Include="..\Source\Camera.h" />
+    <ClInclude Include="..\Source\CubeModel.h" />
+    <ClInclude Include="..\Source\EventManager.h" />
+    <ClInclude Include="..\Source\FirstPersonCamera.h" />
+    <ClInclude Include="..\Source\MainCamera.h" />
+    <ClInclude Include="..\Source\Model.h" />
+    <ClInclude Include="..\Source\ObjLoader.h" />
+    <ClInclude Include="..\Source\ParsingHelper.h" />
+    <ClInclude Include="..\Source\ParticleDescriptor.h" />
+    <ClInclude Include="..\Source\ParticleEmitter.h" />
+    <ClInclude Include="..\Source\ParticleSystem.h" />
+    <ClInclude Include="..\Source\PreyModel.h" />
+    <ClInclude Include="..\Source\Renderer.h" />
+    <ClInclude Include="..\Source\RingModel.h" />
+    <ClInclude Include="..\Source\SpaceshipModel.h" />
+    <ClInclude Include="..\Source\SphereModel.h" />
+    <ClInclude Include="..\Source\StaticCamera.h" />
+    <ClInclude Include="..\Source\TextureLoader.h" />
+    <ClInclude Include="..\Source\ThirdPersonCamera.h" />
+    <ClInclude Include="..\Source\UI_elements.hpp" />
+    <ClInclude Include="..\Source\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Assets\Models\cube.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="..\Assets\Models\f.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="..\Assets\Models\Ring.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="..\Assets\Models\spaceship.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="..\Assets\Models\spaceship1.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Assets\Scenes\AnimatedScene.scene" />
+    <None Include="..\Assets\Scenes\AnimatedSceneWithParticles.scene" />
+    <None Include="..\Assets\Scenes\CoordinateSystem.scene" />
+    <None Include="..\Assets\Scenes\StaticScene.scene" />
+    <None Include="..\Assets\Shaders\BlueColor.fragmentshader" />
+    <None Include="..\Assets\Shaders\PathLines.fragmentshader" />
+    <None Include="..\Assets\Shaders\PathLines.vertexshader" />
+    <None Include="..\Assets\Shaders\SkyBox.fragmentshader" />
+    <None Include="..\Assets\Shaders\SkyBox.vertexshader" />
+    <None Include="..\Assets\Shaders\SolidColor.fragmentshader" />
+    <None Include="..\Assets\Shaders\SolidColor.vertexshader" />
+    <None Include="..\Assets\Shaders\Texture.fragmentshader" />
+    <None Include="..\Assets\Shaders\Texture.vertexshader" />
+    <None Include="..\Assets\Textures\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Assets\Textures\10x.png" />
+    <Image Include="..\Assets\Textures\1X.png" />
+    <Image Include="..\Assets\Textures\2k_mercury.jpg" />
+    <Image Include="..\Assets\Textures\2x.png" />
+    <Image Include="..\Assets\Textures\3.png" />
+    <Image Include="..\Assets\Textures\BillboardTest.bmp" />
+    <Image Include="..\Assets\Textures\BirdView.png" />
+    <Image Include="..\Assets\Textures\earth.jpg" />
+    <Image Include="..\Assets\Textures\f.png" />
+    <Image Include="..\Assets\Textures\FirstPerson.png" />
+    <Image Include="..\Assets\Textures\jupiter.jpg" />
+    <Image Include="..\Assets\Textures\mars.jpg" />
+    <Image Include="..\Assets\Textures\mercury.jpg" />
+    <Image Include="..\Assets\Textures\moon.jpg" />
+    <Image Include="..\Assets\Textures\neptune.jpg" />
+    <Image Include="..\Assets\Textures\Particle.png" />
+    <Image Include="..\Assets\Textures\PauseButton.png" />
+    <Image Include="..\Assets\Textures\s7.jpg" />
+    <Image Include="..\Assets\Textures\saturn.jpg" />
+    <Image Include="..\Assets\Textures\SideView.png" />
+    <Image Include="..\Assets\Textures\sun.jpg" />
+    <Image Include="..\Assets\Textures\ThirdPerson.png" />
+    <Image Include="..\Assets\Textures\uranus.jpg" />
+    <Image Include="..\Assets\Textures\venus.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
